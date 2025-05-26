@@ -1,6 +1,5 @@
-datapath=/root/autodl-tmp/Grad_DASC/MVTEC_AD
+datapath=/root/MVTEC_AD
 datasets=('wood' 'transistor' 'tile' 'screw' 'pill' 'capsule' 'carpet' 'grid' 'zipper' 'cable' 'toothbrush' 'metal_nut' 'bottle' 'hazelnut' 'leather')
-# datasets=('wood' 'transistor' 'tile')
 dataset_flags=($(for dataset in "${datasets[@]}"; do echo '-d '"${dataset}"; done))
 
 python3 main.py \
@@ -9,7 +8,7 @@ python3 main.py \
 --log_project MVTecAD_Results \
 --results_path results \
 --run_name 0.02 \
---test "pixel_roc.pth" \
+--test "" \
 --save_segmentation_images 0 \
 net \
 -b wideresnet50 \
