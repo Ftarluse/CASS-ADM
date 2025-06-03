@@ -1,4 +1,3 @@
-"""detection methods."""
 import logging
 import os
 import pickle
