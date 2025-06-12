@@ -3,5 +3,5 @@
 CASS-AMD: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
 # Quick Guide
-
+(Writing ...)
 
