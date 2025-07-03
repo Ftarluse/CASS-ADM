@@ -199,7 +199,6 @@ class NetworkFeatureAggregator(torch.nn.Module):
                  backbone,
                  layers_to_extract_from,
                  device,
-                 layers_add_noise=None,
                  noise_std=0.015,
                  train_backbone=False):
         super(NetworkFeatureAggregator, self).__init__()
@@ -222,31 +221,6 @@ class NetworkFeatureAggregator(torch.nn.Module):
         for handle in self.backbone.hook_handles:
             handle.remove()
         self.outputs = {}
-
-        if self.layers_add_noise is not None:
-            for extract_layer in layers_add_noise:
-                forward_hook = NoiseForwardHook(
-                    noise_std, extract_layer, layers_add_noise[-1]
-                )
-                if "." in extract_layer:
-                    extract_idx, extract_block = extract_layer.split(".")
-                    network_layer = backbone.__dict__["_modules"][extract_block]
-                    if extract_idx.isnumeric():
-                        extract_idx = int(extract_idx)
-                        network_layer = network_layer[extract_idx]
-                    else:
-                        network_layer = network_layer.__dict__["_modules"][extract_idx]
-                else:
-                    network_layer = backbone.__dict__["_modules"][extract_layer]
-
-                if isinstance(network_layer, torch.nn.Sequential):
-                    self.backbone.hook_handles.append(
-                        network_layer[-1].register_forward_hook(forward_hook)
-                    )
-                else:
-                    self.backbone.hook_handles.append(
-                        network_layer.register_forward_hook(forward_hook)
-                    )
 
         for extract_layer in layers_to_extract_from:
             forward_hook = ForwardHook(
