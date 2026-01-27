@@ -1,5 +1,5 @@
 datapath=D:/Dataset/Steel_AD
-augpath=D:/Dataset/dtd/images
+augpath=None
 datasets=('1-shot' '5-shot' '10-shot' '15-shot' '25-shot')
 
 dataset_flags=($(for dataset in "${datasets[@]}"; do echo '-d '"${dataset}"; done))
