@@ -1,0 +1,39 @@
+datapath=D:/Dataset/Steel_AD
+augpath=D:/Dataset/dtd/images
+datasets=('1-shot' '5-shot' '10-shot' '15-shot' '25-shot')
+
+dataset_flags=($(for dataset in "${datasets[@]}"; do echo '-d '"${dataset}"; done))
+
+cd ..
+python main.py \
+--gpu 0 \
+--seed 0 \
+--log_project MVTecAD_Results \
+--results_path results \
+--run_name steel \
+--test "best_roc.pth" \
+--evaluate_current_model 1 \
+--save_segmentation_images 0 \
+--save_type 1 \
+net \
+-b wideresnet50 \
+-le layer2 \
+-le layer3 \
+--pretrain_embed_dimension 1536 \
+--target_embed_dimension 1536 \
+--patchsize 3 \
+--meta_epochs 200 \
+--gan_epochs 1 \
+--noise_std 0.02 \
+--max_steps 20 \
+--training_steps 5 \
+--add_pos 1 \
+--dsc_hidden 1024 \
+--dsc_layers 2 \
+--dsc_margin .5 \
+--pre_proj 1 \
+--gamma_clamp 0.5 \
+datasets \
+--batch_size 8 \
+--resize 288 \
+--imagesize 288 "${dataset_flags[@]}" steel $datapath $augpath
