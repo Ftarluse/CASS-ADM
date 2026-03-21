@@ -1,8 +1,6 @@
 datapath=D:/Dataset/MVTEC_LOCO
 augpath=D:/Dataset/dtd/images
 datasets=('breakfast_box' 'juice_bottle' 'pushpins' 'screw_bag' 'splicing_connectors')
-datasets=('pushpins')
-
 dataset_flags=($(for dataset in "${datasets[@]}"; do echo '-d '"${dataset}"; done))
 
 cd ..
