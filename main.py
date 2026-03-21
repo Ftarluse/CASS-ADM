@@ -17,8 +17,6 @@ _DATASETS = {
     "mvtec": ["datasets.mvtec", "MVTecDataset"],
     "mvtec_loco": ["datasets.mvtec_loco", "MVTecLocoDataset"],
     "visa": ["datasets.visa", "VisaDataset"],
-    "steel": ["datasets.steel", "SteelDataset"],
-
 }
 
 @click.group(chain=True)
