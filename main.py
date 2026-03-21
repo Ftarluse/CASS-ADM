@@ -16,7 +16,7 @@ LOGGER = logging.getLogger(__name__)
 _DATASETS = {
     "mvtec": ["datasets.mvtec", "MVTecDataset"],
     "mvtec_loco": ["datasets.mvtec_loco", "MVTecLocoDataset"],
-    "visa": ["datasets.visa", "VisaDataset"],
+    "visa": ["datasets.visa", "VisaDataset"]
 }
 
 @click.group(chain=True)
