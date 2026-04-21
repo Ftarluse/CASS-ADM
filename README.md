@@ -48,13 +48,13 @@ Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the pa
 
 Set `--test` to an empty string (`''`) to train the model. To test the model, set `--test` to the checkpoint filename, such as `best_roc.pth`.
 
-Qualitative results of **CASS-ADMS** (Row 3) and **CASS-ADMM** (Row 4) on the MVTec AD dataset.
+Qualitative results of CASS-ADMS (Row 3) and CASS-ADMM (Row 4) on the MVTec AD dataset.
 
 ![mvtec_ad](./figures/mvtec_ad.jpg)
 
 # Run Steel-AD 
 
-Qualitative results of different models on the Steel-AD dataset under 1-shot setting. From top to bottom, the figure shows: input image, anomaly mask, and experimental results.
+Qualitative results of different models on the Steel-AD dataset in the 1-shot setting. From top to bottom, the rows show the input image, anomaly mask, and experimental results.
  
 ![stell_ad](./figures/1-shot_results.jpg)
 
