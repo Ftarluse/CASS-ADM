@@ -40,4 +40,6 @@ Set `--test` to an empty string (`''`) to train the model. To test the model, se
 # Acknowledgements
 We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation).
 
+# License
+All code within the repo is under [MIT license](https://mit-license.org/)
 
