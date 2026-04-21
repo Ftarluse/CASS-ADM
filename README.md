@@ -10,7 +10,11 @@ This repository contains source code for two CASS-ADM variants implemented with 
 **CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external DTD texture dataset.
 
 Both variants are built on the same network architecture.
-
+| Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
+|----------|----------|-------|-------|-------------|
+| I-AUROC  | 99.9%    | 98.8% | 99.6% | 100%        |
+| P-AUROC  | 99.3%    | 98.8% | 99.4% | 98.9%       | 
+|  AUPRO   | 99.3%    | 98.8% | 99.4% | 98.9%       | 
 # Data Preparation
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
