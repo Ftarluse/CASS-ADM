@@ -44,9 +44,9 @@ Our experiments were conducted on an RTX 4080 Super GPU. Please use the same con
 # Run MVTec-AD
 Edit `./shell/run_mvtec.sh` to configure arguments `--datapath` `--augpath` `--classes` `--test`.
 
-Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the path of an external texture dataset.
+Set `--augpath` to `None` for CASS-ADMS. To use CASS-ADMM, set `--augpath` to the path of an external texture dataset.
 
-Set `--test` to an empty string (`''`) to train the model. To test the model, set `--test` to the checkpoint filename, such as `best_roc.pth`.
+Set `--test` to an empty string (`''`) to train the model. set `--test` to the checkpoint filename (`best_roc.pth`) to test the model.
 
 Qualitative results of **CASS-ADMS (Row 3)** and **CASS-ADMM (Row 4)** on the MVTec AD dataset.
 
