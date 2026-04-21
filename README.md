@@ -12,9 +12,9 @@ This repository contains source code for two CASS-ADM variants implemented with 
 Both variants are built on the same network architecture.
 | Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
 |----------|----------|-------|-------|-------------|
-| I-AUROC  | 99.9%    | 98.8% | 99.6% | 100%        |
-| P-AUROC  | 99.3%    | 98.8% | 99.4% | 98.9%       | 
-|  AUPRO   | 99.3%    | 98.8% | 99.4% | 98.9%       | 
+| I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%        |
+| P-AUROC  | 99.2%    | 98.8% | 99.3% | 87.1%       | 
+|  AUPRO   | 96.7%    | 94.0% | 97.6% | 70.3%       | 
 # Data Preparation
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
@@ -42,7 +42,8 @@ Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the pa
 Set `--test` to an empty string (`''`) to train the model. To test the model, set `--test` to the checkpoint filename, such as `best_roc.pth`.
 
 # Acknowledgements
-We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation).
+We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation).In particular, our image-level anomaly synthesis strategy follows the design of GLASS, while eliminating the need for manually annotated foreground masks.
+
 
 # License
 All code within the repo is under [MIT license](https://mit-license.org/)
