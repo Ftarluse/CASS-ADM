@@ -7,10 +7,11 @@ This repository provides the PyTorch implementation of two CASS-ADM variants for
 
 **CASS-ADMS**: a lightweight version that uses only the feature-level anomaly synthesis strategy and does not require any external data sources.
 
-**CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external DTD texture dataset.
+**CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external DTD texture dataset, and performs image-level anomaly synthesis without using foreground masks.
 
 Both variants are built on the same network architecture.
 
+Performance on Public Datasets
 | Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
 |----------|----------|-------|-------|-------------|
 | I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%       |
