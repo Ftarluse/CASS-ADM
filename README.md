@@ -2,7 +2,7 @@
 ![CASS_ADM](./figures/CASS-ADMS.jpg)
 **CASS-ADM**: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
-# Introduction
+## Introduction
 This repository provides the PyTorch implementation of two CASS-ADM variants for image anomaly detection and localization. The CASS-ADM series employs a controllable feature-level anomaly synthesis method, incorporating three core components: a Noise Distributor, a Gradient-Guided Direction Awareness module, and an Adaptive Direction Regulation module, to achieve decoupling control of feature-level noise intensity and direction.
 
 **CASS-ADMS**: a lightweight version that uses only the feature-level anomaly synthesis strategy and does not require any external data sources.
@@ -32,7 +32,7 @@ Resource Consumption on an NVIDIA RTX 4080 Super GPU
 | MVTec AD | 8          | 200    | 25             | 3.3             | 82               |
 
 State-of-the-art anomaly detection performance with efficient training and low GPU memory consumption. 
-# Data Preparation
+## Data Preparation
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation. In addition, a few-shot steel cross-section anomaly detection dataset is introduced in this work.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
 - [MVTec AD](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
@@ -43,7 +43,7 @@ DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the 
   
 Please keep the dataset folders in their original directory structures.
 
-# Environment
+## Environment
 
 ```python
 conda create -n CassAdm python=3.11.15
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
 
-# Run on MVTec-AD
+## Run on MVTec-AD
 Edit `./shell/run_mvtec.sh` to configure arguments `--datapath`, `--augpath`, `--classes`, and `--test`.
 
 Set `--augpath` to `None` for CASS-ADMS and set `--augpath` to the path of an external texture dataset for CASS-ADMM.
@@ -63,16 +63,16 @@ Qualitative results of **CASS-ADMS (Row 3)** and **CASS-ADMM (Row 4)** on the MV
 
 ![mvtec_ad](./figures/mvtec_ad.jpg)
 
-# Run on Steel-AD 
+## Run on Steel-AD 
 
 Qualitative results of different models on the Steel-AD dataset in the **1-shot** setting. From top to bottom, the rows show the input image, anomaly mask, and experimental results.
  
 ![steel_ad](./figures/1-shot_results.jpg)
 
-# Acknowledgements
+## Acknowledgements
 We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation). 
 
 
-# License
+## License
 All code within the repo is under [MIT license](https://mit-license.org/)
 
