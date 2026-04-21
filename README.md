@@ -46,7 +46,7 @@ Edit `./shell/run_mvtec.sh` to configure arguments `--datapath` `--augpath` `--c
 
 Set `--augpath` to `None` for CASS-ADMS. To use CASS-ADMM, set `--augpath` to the path of an external texture dataset.
 
-Set `--test` to an empty string (`''`) to train the model. set `--test` to the checkpoint filename (`best_roc.pth`) to test the model.
+Set `--test` to an empty string (`''`) for training, and set it to the checkpoint filename (e.g., `best_roc.pth`) to testing.
 
 Qualitative results of **CASS-ADMS (Row 3)** and **CASS-ADMM (Row 4)** on the MVTec AD dataset.
 
