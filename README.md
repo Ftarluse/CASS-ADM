@@ -16,7 +16,7 @@ Both variants are built on the same network architecture.
 | P-AUROC  | 99.2%    | 98.8% | 99.3% | 87.1%       | 
 |  AUPRO   | 96.7%    | 94.0% | 97.6% | 70.3%       | 
 
-Computational Cost on MVTec AD
+Resource Consumption on an NVIDIA RTX 4080 Super GPU
 | Dataset  | Batch Size | Epochs | Train Time (h) | GPU Memory (GB) | Throughput (FPS) |
 |----------|------------|--------|----------------|-----------------|------------------|
 | MVTec AD | 8          | 200    | 25             | 3.3             | 82               |
