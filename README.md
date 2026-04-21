@@ -18,7 +18,16 @@ conda create -n CASS_ADM python=3.11.15
 conda activate CASS_ADM
 pip install -r requirements.txt
 ```
+Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
 
 # Run Mvtec-AD
 Edit ./shell/run_mvtec.sh to configure arguments `--datapath` `--augpath` `--classes` `--test`.
+
+Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the path of an external texture dataset.
+
+Set `--test` to an empty string (`''`) to train the model. To test the model, set `--test` to the checkpoint filename, such as `best_roc.pth`.
+
+
+
+
 
