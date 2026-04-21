@@ -28,7 +28,7 @@ DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the 
 - [VisA](https://github.com/amazon-science/spot-diff/)
 - [MPDD](https://github.com/stepanje/MPDD/)
 - [MVTec LOCO](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
-- [Steel AD](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
+- [Steel AD](https://drive.google.com/file/d/15kf6COvGeDcWT-1ihMsVEe86BG5eIsPf/view?usp=drive_link)
   
 Please keep the dataset folders in their original directory structures.
 
