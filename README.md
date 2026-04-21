@@ -50,6 +50,8 @@ Set `--test` to an empty string (`''`) to train the model. To test the model, se
 ![mvtec_ad](./figures/mvtec_ad.jpg)
 Visualization results of CASS-ADMS (Row 3) and CASS-ADMM (Row 4) on the MVTec AD dataset.
 
+![stell_ad](./figures/1-shot_results.jpg)
+
 # Acknowledgements
 We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation). 
 
