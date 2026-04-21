@@ -1,0 +1,9 @@
+pytorch==2.7.1
+tqdm==4.67.1
+scipy==1.16.0
+opencv_python==4.11.0
+scikit-learn==1.7.0
+torchmetrics==1.7.3
+pandas==2.3.0
+scikit-image==0.25.2
+matplotlib==3.10.3
