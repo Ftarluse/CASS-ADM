@@ -4,8 +4,11 @@ CASS-AMD: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modu
 
 # Introduction
 This repository provides two implementation variants of **CASS-ADM**:
+
 **CASS-ADMS**: a lightweight network that uses only the feature-level anomaly synthesis strategy and does not require any external data sources.
+
 **CASS-ADMM**: a network that adopts a dual-level image-and-feature synthesis strategy and leverages the external **DTD** texture dataset.
+
 Both models share the same network architecture.
 
 
