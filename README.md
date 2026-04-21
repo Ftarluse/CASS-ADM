@@ -1,5 +1,5 @@
 # CASS-AMD
-![CASS_ADM](https://github.com/Ftarluse/CASS-ADM/edit/main/figures/CASS-ADMS.jpg)
+![CASS_ADM](https://github.com/Ftarluse/CASS-ADM/raw/main/figures/CASS-ADMS.jpg)
 CASS-ADM: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
 # Introduction
