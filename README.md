@@ -1,4 +1,4 @@
-# CASS-AMD
+# CASS-ADM
 ![CASS_ADM](./figures/CASS-ADMS.jpg)
 CASS-ADM: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
@@ -33,7 +33,7 @@ DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the 
   
 Please keep the dataset folders in their original directory structures.
 
-# Environments
+# Environment
 
 ```python
 conda create -n cassadm python=3.11.15
@@ -42,22 +42,22 @@ pip install -r requirements.txt
 ```
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
 
-# Run MVTec-AD
+# Run on MVTec-AD
 Edit `./shell/run_mvtec.sh` to configure arguments `--datapath`, `--augpath`, `--classes`, and `--test`.
 
 Set `--augpath` to `None` for CASS-ADMS and set `--augpath` to the path of an external texture dataset for CASS-ADMM.
 
-Set `--test` to an empty string (`''`) for training, and set it to the checkpoint filename (e.g., `best_roc.pth`) to testing.
+Set `--test` to an empty string (`''`) for training, and set it to the checkpoint filename (e.g., `best_roc.pth`) for testing.
 
 Qualitative results of **CASS-ADMS (Row 3)** and **CASS-ADMM (Row 4)** on the MVTec AD dataset.
 
 ![mvtec_ad](./figures/mvtec_ad.jpg)
 
-# Run Steel-AD 
+# Run on Steel-AD 
 
 Qualitative results of different models on the Steel-AD dataset in the **1-shot** setting. From top to bottom, the rows show the input image, anomaly mask, and experimental results.
  
-![stell_ad](./figures/1-shot_results.jpg)
+![steel_ad](./figures/1-shot_results.jpg)
 
 # Acknowledgements
 We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation). 
