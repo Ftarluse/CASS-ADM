@@ -37,7 +37,7 @@ Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the pa
 
 Set `--test` to an empty string (`''`) to train the model. To test the model, set `--test` to the checkpoint filename, such as `best_roc.pth`.
 
-
-
+# Acknowledgements
+We gratefully acknowledge the inspiration provided by [SimpleNet](https://github.com/DonaldRR/SimpleNet/) and [GLASS](https://github.com/cqylunlun/GLASS#data-preparation).
 
 
