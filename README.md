@@ -11,12 +11,20 @@ This repository provides the PyTorch implementation of two CASS-ADM variants for
 
 Both variants are built on the same network architecture.
 
-Performance on Public Datasets
+Performance of **CASS-ADMS** on Public Datasets
+| Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
+|----------|----------|-------|-------|-------------|
+| I-AUROC  | 99.7%    | 97.6% | 97.5% | 82.7%       |
+| P-AUROC  | 98.4%    | 98.4% | 98.9% | 85.8%       | 
+|  AUPRO   | 92.6%    | 90.9% | 96.0% | 67.5%       | 
+
+Performance of **CASS-ADMM** on Public Datasets
 | Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
 |----------|----------|-------|-------|-------------|
 | I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%       |
 | P-AUROC  | 99.2%    | 98.8% | 99.3% | 87.1%       | 
 |  AUPRO   | 96.7%    | 94.0% | 97.6% | 70.3%       | 
+
 
 Resource Consumption on an NVIDIA RTX 4080 Super GPU
 | Dataset  | Batch Size | Epochs | Train Time (h) | GPU Memory (GB) | Throughput (FPS) |
