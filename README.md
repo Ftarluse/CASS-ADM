@@ -12,9 +12,14 @@ This repository contains source code for two CASS-ADM variants implemented with 
 Both variants are built on the same network architecture.
 | Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
 |----------|----------|-------|-------|-------------|
-| I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%        |
+| I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%       |
 | P-AUROC  | 99.2%    | 98.8% | 99.3% | 87.1%       | 
 |  AUPRO   | 96.7%    | 94.0% | 97.6% | 70.3%       | 
+
+| Dataset  | Batch Size | Epochs | Train Time (h) | GPU Memory (GB) | Throughput (FPS) |
+|----------|------------|--------|----------------|-----------------|------------------|
+| MVTec AD | 8          | 200    | 25             | 3.3             | 82               |
+
 # Data Preparation
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
