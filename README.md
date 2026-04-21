@@ -14,8 +14,8 @@ Both variants are built on the same network architecture.
 # Environments
 
 ```python
-conda create -n CASS_ADM python=3.11.15
-conda activate CASS_ADM
+conda create -n cassadm python=3.11.15
+conda activate cassadm
 pip install -r requirements.txt
 ```
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
