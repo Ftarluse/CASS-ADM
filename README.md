@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
 
 # Run Mvtec-AD
-Edit ./shell/run_mvtec.sh to configure arguments `--datapath` `--augpath` `--classes` `--test`.
+Edit `./shell/run_mvtec.sh` to configure arguments `--datapath` `--augpath` `--classes` `--test`.
 
 Set `--augpath` to None for CASS-ADMS. To use CASS-ADMM, set --augpath to the path of an external texture dataset.
 
