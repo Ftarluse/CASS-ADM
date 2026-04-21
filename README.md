@@ -20,5 +20,5 @@ pip install -r requirements.txt
 ```
 
 # Run Mvtec-AD
-Edit ./shell/run_mvtec.sh to configure arguments --datapath --augpath --classes --test.
+Edit ./shell/run_mvtec.sh to configure arguments '--datapath' '--augpath' '--classes' '--test'.
 
