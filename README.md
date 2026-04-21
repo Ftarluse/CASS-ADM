@@ -22,12 +22,13 @@ Resource Consumption on an NVIDIA RTX 4080 Super GPU
 | MVTec AD | 8          | 200    | 25             | 3.3             | 82               |
 
 # Data Preparation
-DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
+DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation. In addition, a few-shot steel cross-section anomaly detection dataset is introduced in this work.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
 - [MVTec AD](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
 - [VisA](https://github.com/amazon-science/spot-diff/)
 - [MPDD](https://github.com/stepanje/MPDD/)
 - [MVTec LOCO](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
+- [Steel AD](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
   
 Please keep the dataset folders in their original directory structures.
 
@@ -51,9 +52,9 @@ Qualitative results of **CASS-ADMS** (Row 3) and **CASS-ADMM** (Row 4) on the MV
 
 ![mvtec_ad](./figures/mvtec_ad.jpg)
 
-# 1-Shot Visualizations
+# Run Steel-AD 
 
-Qualitative results of different models on the Steel-AD dataset. 
+Qualitative results of different models on the Steel-AD dataset under 1-shot setting. 
 
 From top to bottom, the figure shows: input image, anomaly mask, CASS-ADMM, CASS-ADMS, GLASS-j, and SimpleNet
  
