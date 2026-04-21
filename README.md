@@ -7,9 +7,16 @@ This repository contains source code for two CASS-ADM variants implemented with 
 
 **CASS-ADMS**: a lightweight version that uses only the feature-level anomaly synthesis strategy and does not require any external data sources.
 
-**CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external **DTD** texture dataset.
+**CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external DTD texture dataset.
 
 Both variants are built on the same network architecture.
+
+# Data Preparation
+DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
+- [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
+- [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad)
+- [VisA](https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar)
+- [MPDD](你的链接)
 
 # Environments
 
