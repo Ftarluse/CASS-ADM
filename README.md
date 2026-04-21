@@ -14,7 +14,9 @@ Both variants are built on the same network architecture.
 # Environments
 
 ```python
-print("Hello, world!")
+conda create -n CASS_ADM python=3.11
+conda activate CASS_ADM
+pip install -r requirements.txt
 ```
 
 
