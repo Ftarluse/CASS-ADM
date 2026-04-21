@@ -1,6 +1,6 @@
 # CASS-ADM
 ![CASS_ADM](./figures/CASS-ADMS.jpg)
-CASS-ADM: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
+**CASS-ADM**: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
 # Introduction
 This repository provides the PyTorch implementation of two CASS-ADM variants for image anomaly detection and localization. The CASS-ADM series employs a controllable feature-level anomaly synthesis method, incorporating three core components: a **Noise Distributor**, a **Gradient-Guided Direction Awareness module**, and an **Adaptive Direction Regulation module**, to achieve decoupling control of feature-level noise intensity and direction.
