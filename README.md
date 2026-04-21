@@ -19,5 +19,6 @@ conda activate CASS_ADM
 pip install -r requirements.txt
 ```
 
-# Run
-Edit ./shell/run-.sh to configure arguments
+# Run Mvtec-AD
+Edit ./shell/run_mvtec.sh to configure arguments --datapath --augpath --classes --test.
+
