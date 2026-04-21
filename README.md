@@ -46,8 +46,8 @@ Please keep the dataset folders in their original directory structures.
 # Environment
 
 ```python
-conda create -n cassadm python=3.11.15
-conda activate cassadm
+conda create -n CassAdm python=3.11.15
+conda activate CassAdm
 pip install -r requirements.txt
 ```
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
