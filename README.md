@@ -23,6 +23,7 @@ Resource Consumption on an NVIDIA RTX 4080 Super GPU
 |----------|------------|--------|----------------|-----------------|------------------|
 | MVTec AD | 8          | 200    | 25             | 3.3             | 82               |
 
+State-of-the-art anomaly detection performance with efficient training and low GPU memory consumption. 
 # Data Preparation
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation. In addition, a few-shot steel cross-section anomaly detection dataset is introduced in this work.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
