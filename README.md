@@ -3,13 +3,14 @@
 CASS-ADM: A Controlled Anomaly Synthesis Strategy with Asymptotic Diffusion Modulation for Image Anomaly Detection and Localization
 
 # Introduction
-This repository contains source code for two CASS-ADM variants implemented with PyTorch. The CASS-ADM series employs a controllable feature-level anomaly synthesis method, incorporating three core components: a Noise Distributor, a Gradient-Guided Direction Awareness module, and an Adaptive Direction Regulation module, to achieve decoupling control of feature-level noise intensity and direction.
+This repository provides the PyTorch implementation of two CASS-ADM variants for image anomaly detection and localization. The CASS-ADM series employs a controllable feature-level anomaly synthesis method, incorporating three core components: a **Noise Distributor**, a **Gradient-Guided Direction Awareness module**, and an **Adaptive Direction Regulation module**, to achieve decoupling control of feature-level noise intensity and direction.
 
 **CASS-ADMS**: a lightweight version that uses only the feature-level anomaly synthesis strategy and does not require any external data sources.
 
 **CASS-ADMM**: a dual-level version that combines image-level and feature-level anomaly synthesis and leverages the external DTD texture dataset.
 
 Both variants are built on the same network architecture.
+
 | Metric   | MVTec AD | VisA  | MPDD  | MVTec LOCO  |
 |----------|----------|-------|-------|-------------|
 | I-AUROC  | 99.8%    | 97.8% | 98.7% | 82.8%       |
@@ -42,9 +43,9 @@ pip install -r requirements.txt
 Our experiments were conducted on an RTX 4080 Super GPU. Please use the same configuration whenever possible.
 
 # Run MVTec-AD
-Edit `./shell/run_mvtec.sh` to configure arguments `--datapath` `--augpath` `--classes` `--test`.
+Edit `./shell/run_mvtec.sh` to configure arguments `--datapath`, `--augpath`, `--classes`, and `--test`.
 
-Set `--augpath` to `None` for CASS-ADMS. To use CASS-ADMM, set `--augpath` to the path of an external texture dataset.
+Set `--augpath` to `None` for CASS-ADMS and set `--augpath` to the path of an external texture dataset for CASS-ADMM.
 
 Set `--test` to an empty string (`''`) for training, and set it to the checkpoint filename (e.g., `best_roc.pth`) to testing.
 
