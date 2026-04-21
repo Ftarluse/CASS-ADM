@@ -15,8 +15,8 @@ Both variants are built on the same network architecture.
 DTD is an auxiliary texture dataset used only for training CASS-ADMM, while the other datasets are used for anomaly detection evaluation.
 - [DTD](https://www.robots.ox.ac.uk/~vgg/data/dtd/)
 - [MVTec AD](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
-- [VisA](https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar)
-- [MPDD](你的链接)
+- [VisA](https://github.com/amazon-science/spot-diff/))
+- [MPDD](https://github.com/stepanje/MPDD/)
 - [MVTec LOCO](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
 
 # Environments
