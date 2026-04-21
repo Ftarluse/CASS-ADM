@@ -54,9 +54,7 @@ Qualitative results of **CASS-ADMS** (Row 3) and **CASS-ADMM** (Row 4) on the MV
 
 # Run Steel-AD 
 
-Qualitative results of different models on the Steel-AD dataset under 1-shot setting. 
-
-From top to bottom, the figure shows: input image, anomaly mask, CASS-ADMM, CASS-ADMS, GLASS-j, and SimpleNet
+Qualitative results of different models on the Steel-AD dataset under 1-shot setting. From top to bottom, the figure shows: input image, anomaly mask, and experimental results.
  
 ![stell_ad](./figures/1-shot_results.jpg)
 
