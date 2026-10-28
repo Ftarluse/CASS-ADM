@@ -53,7 +53,7 @@ class Discriminator(torch.nn.Module):
             y = torch.sqrt(y.pow(2).mean(dim=1) + 1e-8)
             
             y = y.view(-1,  self.group_size, self.hidden// self.group_size)
-            y = y.mean(dim=-1).repeat(self.hw, 1)
+            y = y.mean(dim=-1).repeat_interleave(self.hw, dim=0)
 
             x = self.body_out(x)
             x = torch.cat([x, y], dim=-1)
