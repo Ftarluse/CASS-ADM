@@ -323,7 +323,7 @@ class CassAdm(torch.nn.Module):
                                 loss.backward()
                                 break
                             
-                        loss = torch.clip(fake_scores - true_scores - 0.0, min=0)
+                        loss = torch.clip(fake_scores - true_scores - 0.5, min=0)
                         grad = torch.autograd.grad(loss.mean(), [fake_feats])[0]
                         grad = (grad - grad.mean()) / (grad.std() + 1e-8)
                         grad = - grad.detach()
