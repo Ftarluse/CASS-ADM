@@ -326,7 +326,7 @@ class CassAdm(torch.nn.Module):
                         loss = torch.clip(fake_scores - true_scores - 0.5, min=0)
                         grad = torch.autograd.grad(loss.mean(), [fake_feats])[0]
                         grad = (grad - grad.mean()) / (grad.std() + 1e-8)
-                        grad = - grad.detach()
+                        grad = grad.detach()
 
                         with torch.no_grad():
             
@@ -339,7 +339,7 @@ class CassAdm(torch.nn.Module):
                     self.gamma_opt.zero_grad()
                     ano_scores = torch.stack(ano_scores)
 
-                    inc_scores = ano_scores[1: ] - ano_scores.median()
+                    inc_scores = ano_scores.median() - ano_scores[1: ] 
                     gamma_grad = - inc_scores
                     self.gamma.grad = gamma_grad / (gamma_grad.norm() + 1e-8)
                        
