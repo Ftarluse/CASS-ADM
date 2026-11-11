@@ -340,7 +340,7 @@ class CassAdm(torch.nn.Module):
                     ano_scores = torch.stack(ano_scores)
 
                     inc_scores = ano_scores.median() - ano_scores[1: ]
-                    gamma_grad = - inc_scores
+                    gamma_grad = inc_scores
                     self.gamma.grad = gamma_grad / (gamma_grad.norm() + 1e-8)
                        
                     self.gamma_opt.step()
