@@ -26,7 +26,7 @@ class Discriminator(torch.nn.Module):
             self.body.add_module('block%d' % (i + 1),
                                  torch.nn.Sequential(
                                      torch.nn.Linear(_in, _hidden),
-                                     torch.nn.BatchNorm1d(_hidden),
+                                     torch.nn.BatchNorm1d(_hidden, momentum=0.005),
                                      torch.nn.LeakyReLU(0.2)
                                  ))
 
@@ -35,7 +35,7 @@ class Discriminator(torch.nn.Module):
         
         self.body_out = torch.nn.Sequential(
             torch.nn.Linear(_hidden, embedding),
-            torch.nn.BatchNorm1d(embedding),
+            torch.nn.BatchNorm1d(embedding, momentum=0.005),
             torch.nn.LeakyReLU(0.2)
         )
 
