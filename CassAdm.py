@@ -296,8 +296,11 @@ class CassAdm(torch.nn.Module):
 
                         if (step + 1) % self.training_steps == 0 or fin_st:
 
-                            true_loss = torch.clip(true_scores + 0.5, min=0)
-                            fake_loss = torch.clip(-fake_scores + 0.5, min=0)
+                            true_loss = torch.nn.functional.softplus(true_scores + 0.5, beta=10)
+                            fake_loss = torch.nn.functional.softplus(-fake_scores + 0.5, beta=10)
+
+                            # true_loss = torch.clip(true_scores + 0.5, min=0)
+                            # fake_loss = torch.clip(-fake_scores + 0.5, min=0)
 
                             if self.exist_aug > 0:
                                 # OHEM + focal_loss
